@@ -17,6 +17,7 @@ function appendTable(data) {
 }
 appendTable(tableData);
 
+// Set Filter button function to filter by date 
 
 function filterBtn() {
     d3.event.preventDefault();
@@ -27,5 +28,4 @@ function filterBtn() {
     }
     appendTable(filterDateTime);
 }
-
 d3.selectAll("#filter-btn").on("click", filterBtn);
